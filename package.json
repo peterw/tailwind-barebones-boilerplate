@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "postcss ./src/styles.css -o ./public/dist/styles.css",
-    "watch": "onchange 'tailwind.config.js' './public/**/*.html' './src/**/*.css' -- npm run build",
+    "dev": "onchange 'tailwind.config.js' './public/**/*.html' './src/**/*.css' -- npm run build", 
     "prod": "NODE_ENV=production postcss ./src/styles.css -o ./public/dist/styles.css"
   },
   "keywords": [],
@@ -17,6 +17,7 @@
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.3.4",
     "onchange": "^7.1.0"
   }
 }
